@@ -1,5 +1,5 @@
 import React from "react";
-import { indexTasks } from '../../helpers/dataFetching';
+import { indexTasks } from '../../helpers/tasksFetcher';
 import TaskCard from "../TaskCard";
 import TaskForm from "../TaskForm";
 

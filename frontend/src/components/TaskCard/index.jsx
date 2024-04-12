@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import { deleteTask } from '../../helpers/dataFetching';
+import { deleteTask } from '../../helpers/tasksFetcher';
 
 export default function TaskCard({ id, title, description, status, onTaskDelete }) {
     let navigate = useNavigate();
@@ -18,7 +18,7 @@ export default function TaskCard({ id, title, description, status, onTaskDelete 
 
     return (
         <div className="task-card">
-            <h3>{title}</h3>
+            <h3 className="task-card-title border-2 border-orange-50">{title}</h3>
             <p>{description}</p>
             <p>{status}</p>
             <div className="task-card-footer">
